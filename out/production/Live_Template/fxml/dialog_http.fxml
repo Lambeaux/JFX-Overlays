@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ctrl_http">
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <Button fx:id="btnAddHeader" mnemonicParsing="false" onMouseClicked="#btnAddHeader_Clicked" text="Add Header" />
+            <Button fx:id="btnRemoveHeader" mnemonicParsing="false" onMouseClicked="#btnRemoveHeader_Clicked" text="Remove Header" />
+            <Button fx:id="btnSend" mnemonicParsing="false" onMouseClicked="#btnSend_Clicked" prefHeight="31.0" prefWidth="121.0" text="Send" translateX="400.0" />
+        </items>
+      </ToolBar>
+   </top>
+   <center>
+      <AnchorPane prefHeight="355.0" prefWidth="797.0" BorderPane.alignment="CENTER">
+         <children>
+            <RadioButton fx:id="rdoGet" layoutX="280.0" layoutY="267.0" mnemonicParsing="false" onMouseClicked="#rdoGet_Clicked" text="GET" />
+            <RadioButton fx:id="rdoPost" layoutX="280.0" layoutY="294.0" mnemonicParsing="false" onMouseClicked="#rdoPost_Clicked" text="POST" />
+            <TextArea fx:id="txtRequestUrl" layoutX="14.0" layoutY="254.0" prefHeight="74.0" prefWidth="242.0" />
+            <Label layoutX="14.0" layoutY="9.0" prefHeight="21.0" prefWidth="118.0" text="HEADER NAME:" />
+            <Label layoutX="182.0" layoutY="9.0" prefHeight="21.0" prefWidth="118.0" text="HEADER VALUE:" />
+            <TextField fx:id="txtHeaderName" layoutX="14.0" layoutY="38.0" prefHeight="31.0" prefWidth="151.0" />
+            <TextField fx:id="txtHeaderValue" layoutX="182.0" layoutY="38.0" prefHeight="31.0" prefWidth="169.0" />
+            <ListView fx:id="lstHeaders" layoutX="14.0" layoutY="76.0" prefHeight="141.0" prefWidth="338.0" />
+            <Label layoutX="14.0" layoutY="226.0" prefHeight="21.0" prefWidth="118.0" text="REQUEST URL:" />
+            <TextArea fx:id="txtResponse" layoutX="370.0" layoutY="38.0" prefHeight="181.0" prefWidth="443.0" />
+            <Label layoutX="370.0" layoutY="9.0" prefHeight="21.0" prefWidth="118.0" text="RESPONSE:" />
+            <TextArea fx:id="txtPostBody" disable="true" layoutX="370.0" layoutY="254.0" prefHeight="75.0" prefWidth="443.0" />
+            <Label layoutX="370.0" layoutY="226.0" prefHeight="21.0" prefWidth="118.0" text="POST BODY:" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

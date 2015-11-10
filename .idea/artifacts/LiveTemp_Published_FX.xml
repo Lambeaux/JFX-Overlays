@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" build-on-make="true" name="LiveTemp_Published_FX">
+    <output-path>$PROJECT_DIR$/out/artifacts/LiveTemp_Published_FX</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="Main" />
+        <option name="description" value="" />
+        <option name="htmlParamFile" value="" />
+        <option name="paramFile" value="" />
+        <option name="title" value="Live Template" />
+        <option name="vendor" value="" />
+      </options>
+    </properties>
+    <root id="root" />
+  </artifact>
+</component>
